@@ -47,7 +47,7 @@ function process(){
 
             
             const time_saved_per_year = get_time_saved_per_year(time_saved_per_day)
-            document.getElementById("time_saved_per_year").innerText= time_saved_per_year;
+            document.getElementById("time_saved_per_year").innerText= time_saved_per_year+ ' (Hrs)';
             
             const employee_freed = get_employee_freed(time_saved_per_year,employee_hours_per_day);
             document.getElementById("employee_freed").innerText = employee_freed;
