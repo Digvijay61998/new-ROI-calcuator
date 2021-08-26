@@ -142,7 +142,7 @@ body a {
 
     input[type="number"],
     select {
-        outline:none;
+        outline: none;
         font-size: 20px;
         width: 50%;
         padding: 6px 1px;
@@ -185,8 +185,8 @@ body a {
         margin-top: 10%;
         border-radius: 25px;
         box-shadow: 20px 14px 20px #b5b8bb, -14px -14px 20px rgb(220 220 224);
-        }
-    
+    }
+
     .inp-container {
         padding: 0%;
         display: flex;
@@ -288,7 +288,7 @@ body a {
 
     input[type="number"],
     select {
-        outline:none;
+        outline: none;
         font-size: 20px;
         width: 70%;
         padding: 10px 20px;
@@ -366,7 +366,6 @@ body a {
         font-size: 1.5rem;
         float: right;
         width: 20%;
-        transform: translateY(30px);
     }
 
     span {
@@ -379,8 +378,5 @@ body a {
         text-align: center;
         margin-left: 10%;
         font-size: 1.2rem;
-
-
-
     }
 }
