@@ -36,14 +36,14 @@ function process(){
                 return;
             }
             const day_spent_processing_per_employee= get_day_spent_processing_per_employee(no_of_docs_processed_per_day_per_employee,employee_hours_per_day,time_in_minutes_to_process_single_doc);
-            document.getElementById("day_spent_processing_per_employee").innerText = day_spent_processing_per_employee;
+            document.getElementById("day_spent_processing_per_employee").innerText = day_spent_processing_per_employee+'%';
 
             if(!average_no_of_docs_processed_per_day  || !time_in_minutes_to_process_single_doc || !employee_hours_per_day || !automation_factor){
                 return;
             }
 
             const time_saved_per_day = get_time_saved_per_day(average_no_of_docs_processed_per_day , time_in_minutes_to_process_single_doc, automation_factor)
-            document.getElementById("time_saved_per_day").innerText= time_saved_per_day;
+            document.getElementById("time_saved_per_day").innerText= time_saved_per_day+' (Hrs)';
 
             
             const time_saved_per_year = get_time_saved_per_year(time_saved_per_day)
